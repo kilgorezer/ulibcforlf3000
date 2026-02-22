@@ -1,3 +1,5 @@
+This is Version 1.0.0
+
 THIS HAS BEEN ONLY TESTED ON THE LATEST LEAPPAD PLATINUM FIRMWARE VERSION
 
 Confirmed working on LeapPad Platinum.
@@ -53,4 +55,6 @@ IS CHANGED TO
 # set a fancy prompt
 export PS1='\w \$ '
 
+
 AND FILES IN /usr/lib/arm-linux-gnueabihf WERE MOVED TO /lib/arm-linux-gnueabihf
+NOT EVERY FILE FROM THESE PACKAGES IS INCLUDED
