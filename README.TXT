@@ -1,4 +1,4 @@
-This is Version 1.0.0
+This is Version 1.0.1
 
 THIS HAS BEEN ONLY TESTED ON THE LATEST LEAPPAD PLATINUM FIRMWARE VERSION
 
@@ -29,6 +29,13 @@ DO NOT USE A VIRTUALIZED NETWORK ADAPTER, INCLUDING WSL AND VIRTUAL MACHINES, AS
 
 
 
+== CHANGELOG ==
+v1.0.1:
+Included a link for BusyBox terminfo to Bash terminfo
+Added new glibc command that lets you call the linker
+
+
+
 == TECHNICAL DETAILS ==
 
 THE LIBRARY AND EXECUTABLE FILES WERE TAKEN FROM THESE DEBIAN 8 PACKAGES
@@ -54,7 +61,6 @@ IS CHANGED TO
 
 # set a fancy prompt
 export PS1='\w \$ '
-
 
 AND FILES IN /usr/lib/arm-linux-gnueabihf WERE MOVED TO /lib/arm-linux-gnueabihf
 NOT EVERY FILE FROM THESE PACKAGES IS INCLUDED

@@ -10,6 +10,7 @@ chmod +x /bin/bashbug
 
 # linking files
 ln -s arm-linux-gnueabihf/ld-2.19.so ../ld-linux-armhf.so.3
+ln -s ../lib/arm-linux-gnueabihf/ld-2.19.so ../../bin/glibc
 ln -s ld-2.19.so ld-linux-armhf.so.3
 ln -s ld-linux-armhf.so.3 ld-linux.so.3
 ln -s libanl-2.19.so libanl.so.1
@@ -48,3 +49,6 @@ ln -s libtinfo.so.5.9 libtinfo.so.5
 ln -s libtic.so.5.9 libtic.so.5
 ln -s bash ../../bin/rbash
 ln -s nano-tiny ../../bin/nano
+
+# link terminfo
+ln -s /etc/terminfo/ /usr/share/terminfo
