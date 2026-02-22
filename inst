@@ -1,0 +1,50 @@
+# setting directory
+cd /lib/arm-linux-gnueabihf/
+
+# creating executables
+chmod +x ./ld-2.19.so
+chmod +x /bin/bash
+chmod +x /bin/nano-tiny
+chmod +x /bin/clear_console
+chmod +x /bin/bashbug
+
+# linking files
+ln -s arm-linux-gnueabihf/ld-2.19.so ../ld-linux-armhf.so.3
+ln -s ld-2.19.so ld-linux-armhf.so.3
+ln -s ld-linux-armhf.so.3 ld-linux.so.3
+ln -s libanl-2.19.so libanl.so.1
+ln -s libBrokenLocale-2.19.so libBrokenLocale.so.1
+ln -s libc-2.19.so libc.so.6
+ln -s libcidn-2.19.so libcidn.so.1
+ln -s libcrypt-2.19.so libcrypt.so.1
+ln -s libdl-2.19.so libdl.so.2
+ln -s libm-2.19.so libm.so.6
+ln -s libnsl-2.19.so libnsl.so.1
+ln -s libnss_compat-2.19.so libnss_compat.so.2
+ln -s libnss_dns-2.19.so libnss_dns.so.2
+ln -s libnss_files-2.19.so libnss_files.so.2
+ln -s libnss_hesiod-2.19.so libnss_hesiod.so.2
+ln -s libnss_nis-2.19.so libnss_nis.so.2
+ln -s libnss_nisplus-2.19.so libnss_nisplus.so.2
+ln -s libpthread-2.19.so libpthread.so.0
+ln -s libresolv-2.19.so libresolv.so.2
+ln -s librt-2.19.so librt.so.1
+ln -s libthread_db-1.0.so libthread_db.so.1
+ln -s libutil-2.19 libutil.so.1
+ln -s libstdc++.so.6.0.20 libstdc++.so.6
+ln -s libz.so.1.2.8 libz.so.1
+ln -s libncurses.so.5.9 libncurses.so.5
+ln -s libform.so.5.9 libform.so.5
+ln -s libmenu.so.5.9 libmenu.so.5
+ln -s libpanel.so.5.9 libpanel.so.5
+ln -s libncursesw.so.5.9 libncursesw.so.5
+ln -s libformw.so.5.9 libformw.so.5
+ln -s libmenuw.so.5.9 libmenuw.so.5
+ln -s libpanelw.so.5.9 libpanelw.so.5
+ln -s libhistory.so.6.3 libhistory.so.6
+ln -s libreadline.so.6.3 libreadline.so.6
+ln -s libslang.so.2.3.0 libslang.so.2
+ln -s libtinfo.so.5.9 libtinfo.so.5
+ln -s libtic.so.5.9 libtic.so.5
+ln -s bash ../../bin/rbash
+ln -s nano-tiny ../../bin/nano
