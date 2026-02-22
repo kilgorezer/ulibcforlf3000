@@ -1,4 +1,4 @@
-This is Version 1.0.1
+This is Version 1.0.2
 
 THIS HAS BEEN ONLY TESTED ON THE LATEST LEAPPAD PLATINUM FIRMWARE VERSION
 
@@ -33,6 +33,8 @@ DO NOT USE A VIRTUALIZED NETWORK ADAPTER, INCLUDING WSL AND VIRTUAL MACHINES, AS
 v1.0.1:
 Included a link for BusyBox terminfo to Bash terminfo
 Added new glibc command that lets you call the linker
+v1.0.2:
+Bash terminal bugfixes, forcing the terminal to not act like it is in overtype mode
 
 
 
@@ -61,6 +63,9 @@ IS CHANGED TO
 
 # set a fancy prompt
 export PS1='\w \$ '
+
+# bash seems to hate vt102
+export TERM=vt100
 
 AND FILES IN /usr/lib/arm-linux-gnueabihf WERE MOVED TO /lib/arm-linux-gnueabihf
 NOT EVERY FILE FROM THESE PACKAGES IS INCLUDED
